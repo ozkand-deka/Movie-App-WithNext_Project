@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { toastErrorNotify, toastWarnNotify } from "@/helpers/page";
 import { setUser } from "@/store/auth-store/page";
@@ -7,15 +7,13 @@ import React, { useState } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 
-
 const Login = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-const router =useRouter()
-  const register =useSelector((state)=>state.auth.register)
-  console.log(register)
- 
- 
+  const router = useRouter();
+  const register = useSelector((state) => state.auth.register);
+  console.log(register);
+
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
@@ -26,7 +24,6 @@ const router =useRouter()
       setEmail("");
       setName("");
       router.push("/");
-    
 
       toastWarnNotify("Login successful ");
     } else {
@@ -46,7 +43,7 @@ const router =useRouter()
             />
           </div>
           <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-            <form >
+            <form>
               <p className="text-center fs-1 text-primary">Sign In</p>
               <div className="form-outline mb-4">
                 <input
