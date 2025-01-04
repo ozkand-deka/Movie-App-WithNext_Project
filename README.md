@@ -1,36 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1)App altında ilk render edilmesini istediğimiz sayfayı yazıyoruz
+2)Sarmalama Yapmak için layout oluşturuyoruz
+3)Statik ve dinamik rotler var Statikte url değişmiyor dinamikte url değişiyor
+4)Componentin adının page olması zorunlu nextjs böyle isitiyor 
+5)Statik sayfalar dinamikle aynı seviyede ise ilk önce statik render edilir 
+6)Routeler arasında urlden ellede gidebiliriz bir linke basıpta gidebiliriz 
+7)Layout demek her sayfada hedaer ve footer vardır.Ortaya bir children koy ve amaç ortadaki 
+alanın değişmesidir
+8)Layout sayfada bir kere render ediliyor 
+9)Her sayfa kendi içinde layout yapılarına sahip olabilir 
+10)Nextjs en dışta bir layout rander etmemizi isitior.Yani rootlayout şart 
+11)App directory altında error ve loading oluşturabiliyoruz
+12)App directory altında olan herşey servercomponnent yani serverda render ediliyor
+13)Bir servercomponenti clientComğonent yapmak isitiyorsak "use client yazıyoruz"
