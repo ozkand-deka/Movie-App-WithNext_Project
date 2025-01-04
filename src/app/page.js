@@ -1,3 +1,4 @@
+import Movies from "./movies/page";
 
 
 
@@ -5,7 +6,7 @@ export default function Home() {
 
   return (
     <div >
-      Hello World
+    <Movies/>
 
     </div>
   );

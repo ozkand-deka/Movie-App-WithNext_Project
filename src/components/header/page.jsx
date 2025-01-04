@@ -20,9 +20,6 @@ const Header = () => {
             Next Movie App
           </Link>
           <nav className="navbar navbar-expand-lg navbar-dark">
-            <a className="navbar-brand" href="#">
-              Navbar
-            </a>
             <button
               className="navbar-toggler"
               type="button"
@@ -36,17 +33,20 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <Link className="nav-item nav-link active" href="/">
-                  Home 
+              <Link className="nav-item nav-link" href="/">
+                  Movies
                 </Link>
-                <Link className="nav-item nav-link" href="/">
-                  Features
+                <Link className="nav-item nav-link" href="/about">
+                  About
                 </Link>
-                <Link className="nav-item nav-link" href="/">
+                <Link className="nav-item nav-link" href="/communication">
+                  Communication
+                </Link>
+                <Link className="nav-item nav-link" href="/pricing">
                   Pricing
                 </Link>
-                <Link className="nav-item nav-link disabled" href="/">
-                  Disabled
+                <Link className="nav-item nav-link" href="/contact">
+                  Contact
                 </Link>
               </div>
             </div>
@@ -55,12 +55,12 @@ const Header = () => {
           <div className="d-flex m-1" role="search">
             <button className="btn btn-primary m-2  ">Logout</button>
 
-          <Link href="/login">
-          <button className="btn btn-primary m-2  ">Login</button>
-          </Link>  
-          <Link href="/register">
-            <button className="btn btn-primary m-2  ">Register</button>
-            </Link>  
+            <Link href="/login">
+              <button className="btn btn-primary m-2  ">Login</button>
+            </Link>
+            <Link href="/register">
+              <button className="btn btn-primary m-2  ">Register</button>
+            </Link>
           </div>
         </div>
       </nav>
