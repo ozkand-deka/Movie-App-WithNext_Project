@@ -2,14 +2,18 @@
 
 import { toastErrorNotify, toastWarnNotify } from "@/helpers/page";
 import { setUser } from "@/store/auth-store/page";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+const router =useRouter()
+  const register =useSelector((state)=>state.auth.register)
+  console.log(register)
  
  
   const dispatch = useDispatch();
@@ -21,6 +25,7 @@ const Login = () => {
       dispatch(setUser({ email, name }));
       setEmail("");
       setName("");
+      router.push("/");
     
 
       toastWarnNotify("Login successful ");

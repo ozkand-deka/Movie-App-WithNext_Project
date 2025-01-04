@@ -1,12 +1,14 @@
 "use client";
 
 import { setRegister } from "@/store/auth-store/page";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const router = useRouter()
 
   const dispatch = useDispatch();
 
@@ -15,6 +17,7 @@ const Register = () => {
     dispatch(setRegister({ name, email }));
     setName("");
     setEmail("");
+    router.push('/login')
   };
 
   return (
