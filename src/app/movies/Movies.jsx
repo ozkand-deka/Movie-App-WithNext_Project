@@ -67,7 +67,7 @@ export default function Movies({ initialMovies = [] }) {
           </div>
         ))}
 
-        {/* Güncelleme (Edit) Modal’ı */}
+       
         {selectedMovie && (
           <UpdateModal
             movie={selectedMovie}
